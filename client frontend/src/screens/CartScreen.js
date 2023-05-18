@@ -37,13 +37,13 @@ const CartScreen = ({ match, location, history }) => {
           <div className=" alert alert-info text-center mt-3">
             Your cart is empty
             <Link
-              className="btn btn-success mx-5 px-5 py-3"
+              className="btn btn-warning mx-5 px-5 py-3" 
               to="/"
               style={{
                 fontSize: "12px",
               }}
             >
-              SHOPPING NOW
+              SHOP NOW
             </Link>
           </div>
         ) : (
@@ -88,7 +88,7 @@ const CartScreen = ({ match, location, history }) => {
                 </div>
                 <div className="cart-price mt-3 mt-md-0 col-md-2 align-items-sm-end align-items-start  d-flex flex-column justify-content-center col-sm-7">
                   <h6>PRICE</h6>
-                  <h4>${item.price}</h4>
+                  <h4>₱{item.price}</h4>
                 </div>
               </div>
             ))}
@@ -96,7 +96,7 @@ const CartScreen = ({ match, location, history }) => {
             {/* End of cart iterms */}
             <div className="total">
               <span className="sub">total:</span>
-              <span className="total-price">${total}</span>
+              <span className="total-price">₱{total}</span>
             </div>
             <hr />
             <div className="cart-buttons d-flex align-items-center row">

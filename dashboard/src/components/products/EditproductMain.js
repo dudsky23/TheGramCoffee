@@ -23,6 +23,7 @@ const EditProductMain = (props) => {
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
+  const [size, setSize] = useState(0);
   const [image, setImage] = useState("");
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
@@ -39,6 +40,7 @@ const EditProductMain = (props) => {
     success: successUpdate,
   } = productUpdate;
 
+    
   useEffect(() => {
     if (successUpdate) {
       dispatch({ type: PRODUCT_UPDATE_RESET });
@@ -50,6 +52,7 @@ const EditProductMain = (props) => {
         setName(product.name);
         setDescription(product.description);
         setCountInStock(product.countInStock);
+        setSize(product.size);
         setImage(product.image);
         setPrice(product.price);
       }
@@ -63,6 +66,7 @@ const EditProductMain = (props) => {
         _id: productId,
         name,
         price,
+        size,
         description,
         image,
         countInStock,
@@ -115,6 +119,20 @@ const EditProductMain = (props) => {
                           onChange={(e) => setName(e.target.value)}
                         />
                       </div>
+                      <div className="mb-4">
+                    <label htmlFor="product_size" className="form-label">
+                      Size
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Type here"
+                      className="form-control"
+                      id="product_size"
+                      required
+                      value={size}
+                      onChange={(e) => setSize(e.target.value)}
+                    />
+                  </div>
                       <div className="mb-4">
                         <label htmlFor="product_price" className="form-label">
                           Price

@@ -80,7 +80,7 @@ const SingleProduct = ({ history, match }) => {
                   <div className="product-count col-lg-7 ">
                     <div className="flex-box d-flex justify-content-between align-items-center">
                       <h6>Price</h6>
-                      <span>${product.price}</span>
+                      <span>₱{product.price}</span>
                     </div>
                     <div className="flex-box d-flex justify-content-between align-items-center">
                       <h6>Status</h6>
@@ -99,6 +99,21 @@ const SingleProduct = ({ history, match }) => {
                     </div>
                     {product.countInStock > 0 ? (
                       <>
+                      <div className="flex-box d-flex justify-content-between align-items-center">
+                          <h6>Size</h6>
+                          <select
+                            value={qty}
+                            onChange={(e) => setQty(e.target.value)}
+                          >
+                            {[...Array(product.countInStock).keys()].map(
+                              (x) => (
+                                <option key={x + 1} value={x + 1}>
+                                  {x + 1}
+                                </option>
+                              )
+                            )}
+                          </select>
+                        </div>
                         <div className="flex-box d-flex justify-content-between align-items-center">
                           <h6>Quantity</h6>
                           <select
