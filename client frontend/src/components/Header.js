@@ -32,24 +32,14 @@ const Header = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center display-none">
-              <p>+255 768 356 890</p>
-              <p>info@zpunet.com</p>
+              <p>The Gram</p>
             </div>
             <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-              <Link to="">
+              <Link to="https://www.facebook.com/thegramcoffeemanda">
                 <i className="fab fa-facebook-f"></i>
               </Link>
-              <Link to="">
+              <Link to="https://www.instagram.com/thegramcoffee_ph/">
                 <i className="fab fa-instagram"></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-linkedin-in"></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-youtube"></i>
-              </Link>
-              <Link to="">
-                <i className="fab fa-pinterest-p"></i>
               </Link>
             </div>
           </div>
@@ -169,7 +159,7 @@ const Header = () => {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Hi, {userInfo.name}
+                    {userInfo.name}
                     </button>
                     <div className="dropdown-menu">
                       <Link className="dropdown-item" to="/profile">
@@ -196,6 +186,8 @@ const Header = () => {
                   <i className="fas fa-shopping-bag"></i>
                   <span className="badge">{cartItems.length}</span>
                 </Link>
+                
+               
               </div>
             </div>
           </div>
