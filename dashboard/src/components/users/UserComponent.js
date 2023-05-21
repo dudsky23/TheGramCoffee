@@ -43,13 +43,6 @@ const UserComponent = () => {
                 <option>Show all</option>
               </select>
             </div>
-            <div className="col-lg-2 col-6 col-md-3">
-              <select className="form-select">
-                <option>Status: all</option>
-                <option>Active only</option>
-                <option>Disabled</option>
-              </select>
-            </div>
           </div>
         </header>
 
@@ -67,7 +60,7 @@ const UserComponent = () => {
                     <div className="card-header">
                       <img
                         className="img-md img-avatar"
-                        src="images/favicon.png"
+                        src="images/user.png"
                         alt="User pic"
                       />
                     </div>

@@ -120,20 +120,6 @@ const EditProductMain = (props) => {
                         />
                       </div>
                       <div className="mb-4">
-                    <label htmlFor="product_size" className="form-label">
-                      Size
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Type here"
-                      className="form-control"
-                      id="product_size"
-                      required
-                      value={size}
-                      onChange={(e) => setSize(e.target.value)}
-                    />
-                  </div>
-                      <div className="mb-4">
                         <label htmlFor="product_price" className="form-label">
                           Price
                         </label>

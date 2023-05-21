@@ -1,11 +1,11 @@
 import React from "react";
 
-const SaleStatistics = () => {
+const ProductsStatistics = () => {
   return (
     <div className="col-xl-6 col-lg-12">
       <div className="card mb-4 shadow-sm">
         <article className="card-body">
-          <h5 className="card-title">Sales</h5>
+          <h5 className="card-title">Popularity</h5>
           <iframe
             style={{
               background: "#FFFFFF",
@@ -15,7 +15,7 @@ const SaleStatistics = () => {
               width: "100%",
               height: "350px",
             }}
-            src="https://charts.mongodb.com/charts-the-gram-suyxo/embed/charts?id=645d93ef-c04b-4009-808a-0eeea7bb89eb&maxDataAge=60&theme=light&autoRefresh=true"
+            src="https://charts.mongodb.com/charts-the-gram-suyxo/embed/charts?id=64699872-8b41-4e14-8633-79306916e048&maxDataAge=60&theme=light&autoRefresh=true"
           ></iframe>
         </article>
       </div>
@@ -23,4 +23,4 @@ const SaleStatistics = () => {
   );
 };
 
-export default SaleStatistics;
+export default ProductsStatistics;

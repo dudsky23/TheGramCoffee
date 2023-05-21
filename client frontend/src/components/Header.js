@@ -27,24 +27,6 @@ const Header = () => {
   };
   return (
     <div>
-      {/* Top Header */}
-      <div className="Announcement ">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 d-flex align-items-center display-none">
-              <p>The Gram</p>
-            </div>
-            <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-              <Link to="https://www.facebook.com/thegramcoffeemanda">
-                <i className="fab fa-facebook-f"></i>
-              </Link>
-              <Link to="https://www.instagram.com/thegramcoffee_ph/">
-                <i className="fab fa-instagram"></i>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
       {/* Header */}
       <div className="header">
         <div className="container">
