@@ -17,7 +17,6 @@ const ToastObjects = {
 const AddProductMain = () => {
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
-  const [size, setSize] = useState(0);
   const [image, setImage] = useState("");
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
@@ -34,7 +33,6 @@ const AddProductMain = () => {
       setName("");
       setDescription("");
       setCountInStock(0);
-      setSize("small, medium, large");
       setImage("");
       setPrice(0);
     }
@@ -42,7 +40,7 @@ const AddProductMain = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(createProduct(name, price, description, size, image, countInStock));
+    dispatch(createProduct(name, price, description, image, countInStock));
   };
 
   return (
